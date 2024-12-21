@@ -1,0 +1,43 @@
+# Node modules (các gói thư viện đã cài đặt qua npm)
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Thư mục chứa các tệp tạm thời
+tmp/
+temp/
+
+# Thông tin cấu hình môi trường (biến môi trường)
+
+# Các tệp liên quan đến quá trình phát triển hoặc cài đặt cụ thể của hệ thống
+.DS_Store  # Trên macOS
+Thumbs.db  # Trên Windows
+
+# Tệp khóa cài đặt package nếu không muốn đẩy lên (nên giữ lại với lý do đồng nhất)
+# package-lock.json
+# yarn.lock
+
+# Tệp sản phẩm build (nếu có build phía server)
+dist/
+build/
+
+# IDE và các editor files (VSCode, JetBrains, Sublime, ...)
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Coverage directory khi chạy test
+coverage/
+
+# Các tệp log riêng biệt hoặc tạm thời khi phát triển
+*.log
+*.tmp
+
+# Thư mục hoặc tệp test liên quan đến quá trình CI/CD
+/coverage
+/.nyc_output
+/.next
+/out/
