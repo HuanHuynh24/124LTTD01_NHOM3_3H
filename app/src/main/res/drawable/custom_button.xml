@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái khi button được nhấn (pressed) -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF5722"/> <!-- Màu khi nhấn -->
+            <corners android:radius="8dp"/> <!-- Bo góc -->
+        </shape>
+    </item>
+
+    <!-- Trạng thái khi button được kích hoạt (enabled) -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#BDBDBD"/> <!-- Màu khi không thể nhấn -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Trạng thái mặc định -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#4CAF50"/> <!-- Màu mặc định -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="30dp"/>
+
+    <!-- Màu nền cam -->
+    <solid android:color="#FFA500" />
+
+    <!-- Đường viền (nếu cần) -->
+    <stroke
+        android:width="2dp"
+        android:color="#FF8C00" />
+
+    <!-- Padding (nếu cần) -->
+    <padding
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"
+        android:bottom="10dp"/>
+
+    <!-- Kích thước mặc định (tùy chỉnh theo nhu cầu) -->
+    <size
+        android:width="100dp"
+        android:height="100dp" />
+</shape>

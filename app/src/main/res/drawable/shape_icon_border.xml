@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Bo tròn 4 góc -->
+            <solid android:color="@android:color/white" /> <!-- Màu nền -->
+        </shape>
+    </item>
+
+    <!-- Layer viền -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Bo tròn 4 góc -->
+            <stroke
+                android:width="2dp"
+            android:color="@color/white" />
+        </shape>
+    </item>
+
+</layer-list>
