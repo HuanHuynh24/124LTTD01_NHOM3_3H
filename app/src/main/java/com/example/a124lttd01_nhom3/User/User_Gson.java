@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.example.a124lttd01_nhom3.FakeData.User;
-import com.example.app_hoctap_nhom3h.FakeData.User;
-import com.example.app_hoctap_nhom3h.TabMath;
 import com.google.gson.Gson;
 
 import java.util.List;
@@ -13,7 +11,6 @@ import java.util.List;
 public class User_Gson {
     private Context context;
     private List<User> users;
-    p
 
     public User_Gson(Context context) {
 

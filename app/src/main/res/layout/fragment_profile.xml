@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:background="@drawable/circle_image_with_border"
-            app:shapeAppearanceOverlay="@style/CircleImageView" />
+            />
         <TextView
             android:id="@+id/tvUsername"
             android:layout_width="match_parent"

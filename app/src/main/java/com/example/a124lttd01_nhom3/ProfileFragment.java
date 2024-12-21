@@ -46,8 +46,8 @@ public class ProfileFragment extends Fragment {
         tvUsername = view.findViewById(R.id.tvUsername);
         clickClose = view.findViewById(R.id.clickClose);
 
-        tvUsername.setText(new User_Gson(getContext()).getUser().getUsername());
-        Log.d("user", new User_Gson(getContext()).getUser().toString());
+        /*tvUsername.setText(new User_Gson(getContext()).getUser().getUsername());
+        Log.d("user", new User_Gson(getContext()).getUser().toString());*/
         // Thiết lập sự kiện cho LinearLayout để chuyển đến trang thông tin cá nhân
         page_Thongtin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,29 +104,29 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        User_Gson userGson = new User_Gson(getContext());
-        User user = userGson.getUser(); // Lấy đối tượng người dùng
-
-        if (user != null) {
-            tvUsername.setText(user.getUsername());
-            String avatarUrl = user.getAvatar_img();
-            Log.d("ProfileFragment", "Avatar URI: " + avatarUrl); // Kiểm tra URI
-
-            if (avatarUrl != null && !avatarUrl.isEmpty()) {
-                Uri avatarUri = Uri.parse(avatarUrl);
-                Glide.with(this)
-                        .load(avatarUri) // Sử dụng Uri.parse() để nạp ảnh từ URI
-                        .placeholder(R.drawable.avt_profile_hh) // Ảnh mặc định
-                        .error(R.drawable.ic_person_outline_hh) // Ảnh khi tải không thành công
-                        .into(imgAvtUser);
-            } else {
-                // Nếu không có ảnh đại diện, sử dụng ảnh mặc định
-                Glide.with(this).load(R.drawable.avt_profile_hh).into(imgAvtUser);
-            }
-        } else {
-            // Nếu json là null, cũng hiển thị ảnh mặc định
-            Glide.with(this).load(R.drawable.avt_profile_hh).into(imgAvtUser);
-        }
+//        User_Gson userGson = new User_Gson(getContext());
+//        User user = userGson.getUser(); // Lấy đối tượng người dùng
+//
+//        if (user != null) {FF
+//            tvUsername.setText(user.getUsername());
+//            String avatarUrl = user.getAvatar_img();
+//            Log.d("ProfileFragment", "Avatar URI: " + avatarUrl); // Kiểm tra URI
+//
+//            if (avatarUrl != null && !avatarUrl.isEmpty()) {
+//                Uri avatarUri = Uri.parse(avatarUrl);
+//                Glide.with(this)
+//                        .load(avatarUri) // Sử dụng Uri.parse() để nạp ảnh từ URI
+//                        .placeholder(R.drawable.avt_profile_hh) // Ảnh mặc định
+//                        .error(R.drawable.ic_person_outline_hh) // Ảnh khi tải không thành công
+//                        .into(imgAvtUser);
+//            } else {
+//                // Nếu không có ảnh đại diện, sử dụng ảnh mặc định
+//                Glide.with(this).load(R.drawable.avt_profile_hh).into(imgAvtUser);
+//            }
+//        } else {
+//            // Nếu json là null, cũng hiển thị ảnh mặc định
+//            Glide.with(this).load(R.drawable.avt_profile_hh).into(imgAvtUser);
+//        }
     }
 
 
@@ -165,7 +165,7 @@ public class ProfileFragment extends Fragment {
                 // Hiển thị ảnh trên ShapeableImageView bằng Glide
                 Glide.with(this).load(selectedImageUri).into(imgAvtUser);
 
-                // Cập nhật ảnh đại diện cho người dùng
+                /*// Cập nhật ảnh đại diện cho người dùng
                 User_Gson userGson = new User_Gson(getContext());
                 User user = userGson.getUser(); // Lấy đối tượng người dùng
                 if (user != null) {
@@ -179,7 +179,7 @@ public class ProfileFragment extends Fragment {
                     editor.apply();
                 } else {
                     Toast.makeText(getActivity(), "Lỗi: Không thể lấy thông tin người dùng", Toast.LENGTH_SHORT).show();
-                }
+                }*/
             } else {
                 Toast.makeText(getActivity(), "Không thể chọn ảnh", Toast.LENGTH_SHORT).show();
             }
