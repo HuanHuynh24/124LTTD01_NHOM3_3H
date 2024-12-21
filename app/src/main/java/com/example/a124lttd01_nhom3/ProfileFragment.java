@@ -23,10 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.app_hoctap_nhom3h.FakeData.User;
-import com.example.app_hoctap_nhom3h.Retrofit.RetrofitClient;
-import com.example.app_hoctap_nhom3h.Retrofit.UploadCallback;
-import com.example.app_hoctap_nhom3h.User.User_Gson;
+
+import com.example.a124lttd01_nhom3.FakeData.User;
+import com.example.a124lttd01_nhom3.User.User_Gson;
 import com.google.android.material.imageview.ShapeableImageView;
 
 import java.io.File;
@@ -53,15 +52,15 @@ public class ProfileFragment extends Fragment {
         page_Thongtin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ProfileActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(getActivity(), ProfileActivity.class);
+                //startActivity(intent);
             }
         });
         clickClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentClose = new Intent(getActivity(), LoginActivity.class);
-                startActivity(intentClose);
+                //Intent intentClose = new Intent(getActivity(), LoginActivity.class);
+                //startActivity(intentClose);
             }
         });
 
