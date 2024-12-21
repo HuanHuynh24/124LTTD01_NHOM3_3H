@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Nền của thanh tiến trình -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="16dp"/>  <!-- Bo góc cho nền -->
+            <solid android:color="#fff"/>  <!-- Màu nền (gray) -->
+            <size android:height="16dp"/>  <!-- Chiều cao của màu nền -->
+        </shape>
+    </item>
+
+    <!-- Phần tiến độ -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="16dp"/>  <!-- Bo góc cho phần tiến độ -->
+                <size android:height="6dp"/>  <!-- Chiều cao của phần tiến độ -->
+                <gradient
+                    android:startColor="#C6EFD840"
+                android:endColor="#FFB039"
+                android:angle="0" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
