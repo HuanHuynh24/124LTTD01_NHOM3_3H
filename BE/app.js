@@ -1,4 +1,5 @@
 import express from "express";
+import db from "./data/mongodb.js";
 import cors from "cors";
 import useRouterUser from "./routers/User.js";
 
